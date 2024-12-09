@@ -129,14 +129,6 @@ img > div {
   color: var(--text);
 }
 
-.salam {
-  opacity: 0.15;
-  transition: all 0.45s;
-  animation: opacity 5s ease-in infinite alternate;
-}
-.salam:hover {
-  opacity: 1;
-}
 
 .containers {
   scroll-snap-type: y mandatory;
