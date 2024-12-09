@@ -129,7 +129,6 @@ img > div {
   color: var(--text);
 }
 
-
 .containers {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -139,7 +138,7 @@ img > div {
 }
 
 .section {
-  height: 100vh;
-  min-height: 100vh;
+  height: calc(100dvh - 1px);
+
   scroll-snap-align: start;
 }
