@@ -115,6 +115,10 @@ body {
   scroll-behavior: smooth;
 }
 
+* > li{
+  color: var(--text);
+}
+
 * > li:hover {
   cursor: pointer;
 }
@@ -139,6 +143,5 @@ img > div {
 
 .section {
   height: calc(100dvh - 1px);
-
   scroll-snap-align: start;
 }

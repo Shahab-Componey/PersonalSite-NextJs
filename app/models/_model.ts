@@ -1,4 +1,5 @@
 import {StaticImageData} from "next/image";
+import React, {ReactNode} from "react";
 
 export interface Text_Interface {
   children: React.ReactNode;
@@ -17,12 +18,12 @@ export interface image_Interface {
 
 export interface Skill_Interface {
   children: React.ReactNode;
+  logo: StaticImageData;
 }
 
 export interface Card_Interface {
-  title: String;
-  tolls: String;
-  descrption: String;
+  defualtComponent: ReactNode;
+  hoveredComponent: ReactNode;
 }
 
 export interface Social_Interface {

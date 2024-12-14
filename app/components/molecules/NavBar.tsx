@@ -6,17 +6,17 @@ export default function NavBar() {
     <nav>
       <ul className={`flex gap-NavBar-gap text-NavBar-text text-nowrap  `}>
         <li>
-          <Text>About Me</Text>
+          <a href="#Home">Home</a>
         </li>
         <li>
-          <Text>Skills</Text>
+          <a href="#AboutMe">About Me</a>
+        </li>
+        <li>
+          <a href="#Skills">Skills</a>
         </li>
 
         <li>
-          <Text>Pet-Projects</Text>
-        </li>
-        <li>
-          <Text>Contacts</Text>
+          <a href="#Portofolio">Portofolio</a>
         </li>
       </ul>
     </nav>

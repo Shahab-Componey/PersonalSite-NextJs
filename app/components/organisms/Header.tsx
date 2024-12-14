@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="flex  justify-between items-center px-container h-header fixed inset-0 z-50">
+    <header  className="flex  justify-between items-center px-container h-header fixed inset-0 z-50">
       <Name></Name>
       <NavBar></NavBar>
     </header>

@@ -5,7 +5,7 @@ import aboutMePic from "@/public/assets/images/AboutMe/AboutMe-Image.png";
 
 export default function AboutMe() {
   return (
-    <section className="flex gap-AboutMe justify-center items-center flex-1">
+    <section id="AboutMe" className="flex gap-AboutMe justify-center items-center flex-1">
       <Picture src={aboutMePic} className="size-AboutMe-image"></Picture>
       <Text className="text-AboutMe text-regular">
         A few years ago, I became interested in developing websites and

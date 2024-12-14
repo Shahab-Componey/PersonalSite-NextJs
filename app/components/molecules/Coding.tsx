@@ -7,7 +7,7 @@ import pic from "@/public/assets/images/landing/Landing-Image.png";
 export default function Coding() {
   return (
     <div className="flex justify-center items-center w-[500px] relative">
-      <div className="absolute w-profile h-profile z-10 salam ">
+      <div className="absolute w-profile h-profile z-10 opacity-30 hover:opacity-100 transition-all ">
         <Picture
           className="shrink-0 active:scale-105 transition-all"
           src={pic}

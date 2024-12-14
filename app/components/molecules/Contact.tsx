@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "../attoms/Text";
 import Picture from "../attoms/Picture";
-import {Contact_Interface} from "@/app/interface/global_interface";
+import {Contact_Interface} from "@/app/models/_model";
 export default function Contact({children, src, href}: Contact_Interface) {
   return (
     <div className="flex text-Contact-title gap-Contact-gap ">
