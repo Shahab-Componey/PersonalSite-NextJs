@@ -41,3 +41,4 @@ export interface Contact_Interface {
   src: StaticImageData;
   href: string;
 }
+

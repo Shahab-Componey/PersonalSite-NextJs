@@ -5,56 +5,44 @@ import Picture from "../attoms/Picture";
 import Button from "../attoms/Button";
 import gsap from "gsap";
 import pic from "@/public/assets/images/landing/Landing-Image.png";
+import {div} from "motion/react-client";
 
 export default function Card({
   defualtComponent,
   hoveredComponent,
 }: Card_Interface) {
   const [hover, SetHover] = useState<Boolean>(false);
+  const cardHandler = (status: boolean, className: string) => {
+    gsap.to(`${className}`, {
+      opacity: 0,
+      onComplete: () => {
+        SetHover(status);
+        gsap.to(`${className}`, {
+          opacity: 1,
+        });
+      },
+    });
+  };
 
   return (
     <div
-      className="size-portofilio bg-slate-500"
+      className="size-portofilio bg-regular"
       onMouseEnter={() => {
-        SetHover(true);
+        cardHandler(true, ".defualtComponent");
       }}
       onMouseLeave={() => {
-        SetHover(false);
+        cardHandler(false, ".hoveredComponent");
       }}
     >
-      <div>{!hover ? defualtComponent : hoveredComponent}</div>
+      <div>
+        {!hover ? (
+          <div className="defualtComponent h-full w-full">
+            {defualtComponent}
+          </div>
+        ) : (
+          <div className="hoveredComponent h-full">{hoveredComponent}</div>
+        )}
+      </div>
     </div>
   );
 }
-
-// export default function Card({title, tolls, descrption}: Card_Interface) {
-//   const [hover, SetHover] = useState<Boolean>(false);
-
-//   return (
-//     <div
-//       className="size-portofilio bg-slate-500"
-//       onMouseEnter={() => {
-//         SetHover(true);
-//       }}
-//       onMouseLeave={() => {
-//         SetHover(false);
-//       }}
-//     >
-//       {!hover && (
-//         <div className="card--hovred">
-//           <Picture src={pic}></Picture>
-//         </div>
-//       )}
-
-//       {hover && (
-//         <div className="flex card--hovred flex-col justify-center items-center gap-portofilio-gap h-full p-20  ">
-//           <div className="text-Card-title-text">{title}</div>
-//           <div className="text-Card-tolls-text">{tolls}</div>
-//           <div className="w-full bg-black h-row"></div>
-//           <div className="text-Card-tolls-descrption">{descrption}</div>
-//           <Button>SALAM</Button>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
