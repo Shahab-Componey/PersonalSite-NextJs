@@ -15,7 +15,7 @@ export default function Header() {
       transition={{
         duration: 1,
       }}
-      className="flex  justify-between items-center px-container h-header fixed inset-0 z-50"
+      className="flex  justify-between items-center px-container h-header fixed inset-0 z-50  "
     >
       <Name></Name>
       <NavBar></NavBar>

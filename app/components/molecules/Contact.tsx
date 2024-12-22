@@ -1,7 +1,13 @@
 import React from "react";
 import Text from "../attoms/Text";
 import Picture from "../attoms/Picture";
-import {Contact_Interface} from "@/app/models/_model";
+import {StaticImageData} from "next/image";
+interface Contact_Interface {
+  children: React.ReactNode;
+  src: StaticImageData | string;
+  href: string;
+}
+
 export default function Contact({children, src, href}: Contact_Interface) {
   return (
     <div className="flex text-Contact-title gap-Contact-gap ">

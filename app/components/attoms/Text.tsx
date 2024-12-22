@@ -1,6 +1,9 @@
-import {Props} from "next/script";
 import React from "react";
-import {Text_Interface} from "@/app/models/_model";
+
+interface Text_Interface {
+  children: React.ReactNode;
+  className?: string;
+}
 
 export default function Text({children, className}: Text_Interface) {
   return (

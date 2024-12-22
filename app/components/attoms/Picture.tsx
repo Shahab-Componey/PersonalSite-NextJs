@@ -1,17 +1,18 @@
 "use client";
 
 import React from "react";
-import {image_Interface} from "@/app/models/_model";
-import Image from "next/image";
-import {div} from "motion/react-client";
-import {motion} from "motion/react";
+import Image, {StaticImageData} from "next/image";
 
-export default function Picture({src, className}: image_Interface) {
+interface image_Interface {
+  src: StaticImageData | string;
+  className?: string;
+  full?: boolean;
+}
+export default function Picture({src, className, full}: image_Interface) {
   return (
-    <div className={className}>
+    <div className={`${full ? "h-full" : ""}`}>
       <Image
-        className="h-full"
-        objectFit="cover"
+        className={`h-full ${className}`}
         src={src}
         alt={"image dosent loaded"}
       ></Image>

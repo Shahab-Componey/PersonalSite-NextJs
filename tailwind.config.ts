@@ -42,8 +42,8 @@ const config: Config = {
         AboutMe: "3.2rem",
         "AboutMe-image": "10.2rem",
         // skill
-        "Skill-gap": "1.6rem",
-        "Skills-gap": "1.6rem",
+        "Skill-gap": "1.9rem",
+        "Skills-gap": "3rem",
         "skill-weigth": "20rem",
         // portofilio
         portofilio: "30rem",
@@ -54,6 +54,8 @@ const config: Config = {
         "footer-gap": "6.4rem",
         "Contact-gap": "1.6rem",
         "Contact-gap-y": "3.6rem",
+        "Icon-size":"3rem",
+        "Icon-size-button":"2rem"
       },
       padding: {
         "section-space": "5.5rem",
@@ -65,7 +67,7 @@ const config: Config = {
       },
       fontSize: {
         Title: "3.2rem",
-        "NavBar-text": "2rem",
+        "NavBar-text": "1.8rem",
         "Name-text": "3.2rem",
         "Landing-name": "6.4rem",
         "Landing-job": "4rem",

@@ -1,11 +1,11 @@
 "use client";
-import React, {useState} from "react";
-import {Card_Interface} from "@/app/models/_model";
-import Picture from "../attoms/Picture";
-import Button from "../attoms/Button";
+import React, {ReactNode, useState} from "react";
 import gsap from "gsap";
-import pic from "@/public/assets/images/landing/Landing-Image.png";
-import {div} from "motion/react-client";
+
+interface Card_Interface {
+  defualtComponent: ReactNode;
+  hoveredComponent: ReactNode;
+}
 
 export default function Card({
   defualtComponent,
@@ -26,7 +26,7 @@ export default function Card({
 
   return (
     <div
-      className="size-portofilio bg-regular"
+      className="size-portofilio bg-regular rounded-2xl"
       onMouseEnter={() => {
         cardHandler(true, ".defualtComponent");
       }}
@@ -34,13 +34,15 @@ export default function Card({
         cardHandler(false, ".hoveredComponent");
       }}
     >
-      <div>
+      <div className="h-full">
         {!hover ? (
-          <div className="defualtComponent h-full w-full">
+          <div className=" defualtComponent h-full w-full ">
             {defualtComponent}
           </div>
         ) : (
-          <div className="hoveredComponent h-full">{hoveredComponent}</div>
+          <div className="hoveredComponent w-full h-full">
+            {hoveredComponent}
+          </div>
         )}
       </div>
     </div>

@@ -1,5 +1,10 @@
 import React from "react";
-import {Button_Interface} from "@/app/models/_model";
+interface Button_Interface {
+  children: React.ReactNode;
+  className?: string;
+}
+
+
 export default function Button({children, className}: Button_Interface) {
   return (
     <div
