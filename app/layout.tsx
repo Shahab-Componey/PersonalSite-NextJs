@@ -33,9 +33,6 @@ export default function RootLayout({
             "textarea",
             "button",
             ".link",
-            {
-              target: [".button.skill"],
-            },
           ]}
         />
         <>{children}</>
