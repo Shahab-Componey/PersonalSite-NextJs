@@ -27,7 +27,9 @@ const config: Config = {
         skill: "30rem",
         row: "0.1rem",
       },
-
+      backgroundImage: {
+        cards: "var(--cards)",
+      },
       borderRadius: {
         Header: "30px",
         Fotter: "30px",
@@ -50,12 +52,12 @@ const config: Config = {
         "portofilio-gap": "1.6rem",
         social: "1.6rem",
         "share-contact": "20.13rem",
-        footer: "6.4rem",
+        footer: "4.4rem",
         "footer-gap": "6.4rem",
         "Contact-gap": "1.6rem",
         "Contact-gap-y": "3.6rem",
-        "Icon-size":"3rem",
-        "Icon-size-button":"2rem"
+        "Icon-size": "3rem",
+        "Icon-size-button": "2rem",
       },
       padding: {
         "section-space": "5.5rem",

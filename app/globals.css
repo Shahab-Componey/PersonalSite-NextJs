@@ -92,30 +92,30 @@ video {
 }
 :root {
   font-size: 10px;
-  --background: #ffffff;
-  --light-bg: #242320;
-  --dark-bg: #1b1a17;
-  --mark-text: #ff8303;
-  --text: #f0e3ca;
-  --background: #1f1e1b;
+  --light-bg: #f6f7f9;
+  --mark-text: #54b9cf;
+  --text: #f6f7f9;
+  --background: #23272f;
   --button-color: #32312e;
+  --cards: conic-gradient(
+    from -90deg at 110% 100%,
+    #2b303b 0deg,
+    #16181d 1turn
+  );
 }
 
 body {
-  background-color: var(--dark-bgbackground);
+  background: linear-gradient(270deg, #2b303b, #16181d, #16181c, #262b37);
+  background-size: 800% 800%;
+  animation: AnimationName 15s alternate-reverse ease infinite;
   height: 100%;
   margin: 0;
   overflow: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
-* > li{
+* > li {
   color: var(--text);
 }
 
@@ -144,4 +144,50 @@ img > div {
 .section {
   height: calc(100dvh - 1px);
   scroll-snap-align: start;
+}
+
+.card {
+  animation: card 3s ease alternate infinite;
+}
+
+@keyframes card {
+  from {
+    background: conic-gradient(
+      from -90deg at 110% 100%,
+      #2b303b 0deg,
+      #16181d 90deg,
+      #16181d 1turn
+    );
+  }
+  to {
+    background: conic-gradient(
+      from 110% 100%,
+      #2b303b 0deg,
+      #16181d 90deg,
+      #16181d 1turn
+    );
+  }
+}
+.css-selector {
+  background: linear-gradient(270deg, #2b303b, #16181d, #16181c, #262b37);
+  background-size: 800% 800%;
+
+  animation: AnimationName 15s alternate-reverse ease infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 58%;
+  }
+  50% {
+    background-position: 100% 43%;
+  }
+  100% {
+    background-position: 0% 58%;
+  }
+}
+
+li > a:hover {
+  transition: 0.35s all;
+  color: var(--mark-text);
 }

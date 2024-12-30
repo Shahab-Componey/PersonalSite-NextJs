@@ -3,7 +3,7 @@
 import React from "react";
 import Text from "../attoms/Text";
 import Picture from "../attoms/Picture";
-import aboutMePic from "@/public/assets/images/AboutMe/AboutMe-Image.png";
+import aboutMePic from "@/public/assets/images/AboutMe/AboutMe-Image.svg";
 import {motion} from "motion/react";
 
 export default function AboutMe() {

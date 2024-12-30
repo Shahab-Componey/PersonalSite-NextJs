@@ -2,7 +2,7 @@
 import Picture from "../attoms/Picture";
 import React from "react";
 import {ReactTyped} from "react-typed";
-import pic from "@/public/assets/images/landing/Landing-Image.png";
+import pic from "@/public/assets/images/landing/Landing-Image.svg";
 
 export default function Coding() {
   return (
@@ -14,9 +14,9 @@ export default function Coding() {
         ></Picture>
       </div>
 
-      <div className="opacity-55 text-2xl">
+      <div className="opacity-85 text-2xl">
         <ReactTyped
-          className="text-mark-text "
+          className="text-white "
           strings={[
             `
           let button_menu = document.querySelector(".header_button"); <br/>

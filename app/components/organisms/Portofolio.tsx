@@ -5,7 +5,6 @@ import {motion} from "motion/react";
 import React from "react";
 import Picture from "../attoms/Picture";
 import {StaticImageData} from "next/image";
-import {Url} from "url";
 import Button from "../attoms/Button";
 import fencing360Pic from "@/public/assets/images/Portofolio/Fencing360_Template.png";
 import gitHubPic from "@/public/assets/images/Tools/GitHubLogo.svg";
@@ -33,7 +32,7 @@ function DefualtComponent({src}: DefualtComponent) {
     <div className="h-full">
       <Picture
         full={true}
-        className="h-full object-cover rounded-2xl"
+        className="h-full object-cover rounded-xl"
         src={src}
       ></Picture>
     </div>
@@ -63,7 +62,7 @@ function HoveredComponent({
       <div className="flex gap-5">
         <Button>
           <a target="new" href={gitHubLink}>
-            <div className="flex justify-center items-center gap-3">
+            <div className=" flex justify-center items-center gap-3">
               <Picture
                 className="size-Icon-size-button"
                 src={gitHubPic}
