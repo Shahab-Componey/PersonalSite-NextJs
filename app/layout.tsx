@@ -1,7 +1,5 @@
-"use client";
 import "./globals.css";
 import AnimatedCursor from "react-animated-cursor";
-import {createContext, useState} from "react";
 
 export default function RootLayout({
   children,
@@ -18,6 +16,9 @@ export default function RootLayout({
           innerScale={2}
           outerScale={1.5}
           outerAlpha={0}
+          innerStyle={{
+            backgroundColor: "white",
+          }}
           outerStyle={{
             border: `3px solid white`,
           }}
@@ -33,6 +34,8 @@ export default function RootLayout({
             "textarea",
             "button",
             ".link",
+            ".button",
+            ".skill",
           ]}
         />
         <>{children}</>

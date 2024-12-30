@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Skill from "../molecules/Skill";
 import NextJsPic from "@/public/assets/images/Tools/NextJs.svg";
 import JsPic from "@/public/assets/images/Tools/Js.svg";

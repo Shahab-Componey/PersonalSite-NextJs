@@ -1,4 +1,3 @@
-"use client";
 import Picture from "../attoms/Picture";
 import React from "react";
 import {ReactTyped} from "react-typed";
@@ -19,35 +18,28 @@ export default function Coding() {
           className="text-white "
           strings={[
             `
-          let button_menu = document.querySelector(".header_button"); <br/>
-let float_menu  = document.querySelector(".header_menu--float");<br/>
-let line_top   = document.querySelector(".header_button_line--top");<br/>
-let line_under = document.querySelector(".header_button_line--bottom");<br/>
-button_menu.isSelected = false;<br/>
-function addEffectWriting(element, time)<br/> {
-  let element_array = element.innerText.split("");<br/>
-  element.count     = 0;<br/>
-  element.innerText = "";<br/>
-<br/>
-  function writeSymbols() {<br/>
-    element.innerText += element_array[element.count];<br/>
-    element.count++;<br/>
-
-    if (element.count <= element_array.length) {<br/>
-      setTimeout(() => {<br/>
-        writeSymbols();<br/>
-      }, time);<br/>
-    } else if (element.count >= element_array.length) {<br/>
-      element.count     = 0;<br/>
-      element.innerText = "";<br/>
-<br/>
-      writeSymbols();<br/>
-    }<br/>
-  }<br/>
-  writeSymbols();<br/>
-}
-
-          `,
+          "use client";<br/>
+import React from "react";<br/>
+import Coding from "../molecules/Coding";<br/>
+import Heading from "../molecules/Heading";<br/>
+import {motion} from "motion/react";<br/>
+export default function Landing() {<br/>
+  return (<br/>
+    <motion.main<br/>
+      initial={{opacity: 0, y: 110}}<br/>
+      whileInView={{opacity: 1, y: 0}}<br/>
+      viewport={{once: false}}
+      transition={{<br/>
+        duration: 2,<br/>
+      }}<br/>
+      id="Home"<br/>
+      className="flex flex-1 justify-between  px-container items-center "<br/>
+    ><br/>
+      <Heading></Heading><br/>
+      <Coding></Coding><br/>
+    </motion.main><br/>
+  )
+}         `,
           ]}
           typeSpeed={40}
           loop={true}
