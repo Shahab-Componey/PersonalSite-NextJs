@@ -18,7 +18,6 @@ export default function RootLayout({
           innerScale={2}
           outerScale={1.5}
           outerAlpha={0}
-          hasBlendMode={true}
           outerStyle={{
             border: `3px solid white`,
           }}
@@ -35,15 +34,7 @@ export default function RootLayout({
             "button",
             ".link",
             {
-              target: [".button", ".skill"],
-              options: {
-                innerSize: 2,
-                outerSize: 12,
-                color: "100,100,200",
-                outerAlpha: 0.3,
-                innerScale: 0.7,
-                outerScale: 5,
-              },
+              target: [".button.skill"],
             },
           ]}
         />
