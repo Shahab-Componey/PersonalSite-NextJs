@@ -1,4 +1,4 @@
-import React, {ReactNode, useState} from "react";
+import React, {ReactNode, useRef, useState} from "react";
 import gsap from "gsap";
 
 interface Card_Interface {
@@ -11,12 +11,14 @@ export default function Card({
   hoveredComponent,
 }: Card_Interface) {
   const [hover, SetHover] = useState<Boolean>(false);
-  const cardHandler = (status: boolean, className: string) => {
-    gsap.to(`${className}`, {
-      opacity: 0,
+  const elment = useRef<HTMLInputElement | null>(null);
+
+  const cardHandler = (status: boolean, element: HTMLElement) => {
+    gsap.to(element, {
+        opacity: 0,
       onComplete: () => {
         SetHover(status);
-        gsap.to(`${className}`, {
+        gsap.to(element, {
           opacity: 1,
         });
       },
@@ -27,19 +29,19 @@ export default function Card({
     <div
       className="size-portofilio bg-regular rounded-2xl"
       onMouseEnter={() => {
-        cardHandler(true, ".defualtComponent");
+        cardHandler(true, elment.current!);
       }}
       onMouseLeave={() => {
-        cardHandler(false, ".hoveredComponent");
+        cardHandler(false, elment.current!);
       }}
     >
       <div className="h-full">
         {!hover ? (
-          <div className=" defualtComponent h-full w-full ">
+          <div ref={elment} className="defualtComponent h-full w-full">
             {defualtComponent}
           </div>
         ) : (
-          <div className="hoveredComponent w-full h-full">
+          <div ref={elment} className="hoveredComponent w-full h-full">
             {hoveredComponent}
           </div>
         )}

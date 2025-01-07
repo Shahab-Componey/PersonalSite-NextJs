@@ -6,11 +6,10 @@ const config: Config = {
     extend: {
       screens: {
         "2xl": {max: "1500px"},
-        xl: {max: "1200px"},
-        lg: {max: "979px"},
+        xl: {max: "1300px"},
+        lg: {max: "971px"},
         md: {max: "767px"},
-        sm: {max: "610px"},
-        xs: {max: "550px"},
+        sm: {max: "530px"},
       },
       colors: {
         Background: "var(--background-color)",

@@ -6,7 +6,9 @@ import React from "react";
 import Picture from "../attoms/Picture";
 import {StaticImageData} from "next/image";
 import Button from "../attoms/Button";
-import fencing360Pic from "@/public/assets/images/Portofolio/Fencing360_Template.png";
+
+// tolls
+
 import gitHubPic from "@/public/assets/images/Tools/GitHubLogo.svg";
 import reactPic from "@/public/assets/images/Tools/React.svg";
 import nextJsPic from "@/public/assets/images/Tools/NextJs.svg";
@@ -14,6 +16,14 @@ import tsPic from "@/public/assets/images/Tools/Ts.svg";
 import gaspPic from "@/public/assets/images/Tools/Gsap.svg";
 import taillwindPic from "@/public/assets/images/Tools/Taillwind.svg";
 import swiperPic from "@/public/assets/images/Tools/Swiper.svg";
+import electronPic from "@/public/assets/images/Tools/Electorn.svg";
+import jsPic from "@/public/assets/images/Tools/Js.svg";
+
+// templates
+
+import fencing360Pic from "@/public/assets/images/Portofolio/Fencing360_Template.png";
+import shahabstorePic from "@/public/assets/images/Portofolio/ShahabStore_Template.png";
+import todoPic from "@/public/assets/images/Portofolio/Todo_Template.png";
 
 interface DefualtComponent {
   src: StaticImageData;
@@ -93,11 +103,27 @@ export default function Portofolio() {
       gitHubLink: "https://github.com/ShahabMorgan/Fencing360-React",
       projectLink: "https://github.com/ShahabMorgan/Fencing360-React",
     },
+    {
+      projectPicture: shahabstorePic,
+      title: "ShahabStore",
+      tolls: [jsPic, electronPic, , taillwindPic],
+      descrption: "ShahabStore",
+      gitHubLink: "https://github.com/ShahabMorgan/Fencing360-React",
+      projectLink: "https://github.com/ShahabMorgan/Fencing360-React",
+    },
+    {
+      projectPicture: todoPic,
+      title: "ShahabStore",
+      tolls: [reactPic, taillwindPic],
+      descrption: "Todo List App",
+      gitHubLink: "https://github.com/ShahabMorgan/Fencing360-React",
+      projectLink: "https://github.com/ShahabMorgan/Fencing360-React",
+    },
   ];
 
   const portoflioCards = portoflio.map((v) => {
     return (
-      <Card
+      <Card key={v.title}
         defualtComponent={<DefualtComponent src={v.projectPicture} />}
         hoveredComponent={<HoveredComponent {...v} />}
       ></Card>
@@ -113,7 +139,7 @@ export default function Portofolio() {
         duration: 1,
       }}
       id="Portofolio"
-      className="flex justify-center items-center flex-1"
+      className="flex justify-center items-center flex-1 gap-32"
     >
       {portoflioCards}
     </motion.section>

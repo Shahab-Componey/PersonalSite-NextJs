@@ -10,7 +10,7 @@ interface Skill_Interface {
 
 export default function Skill({children, logo, color}: Skill_Interface) {
   return (
-    <div className="skill w-skill-weigth cursor-pointer h-skill css-selector flex flex-col card gap-Skill-gap rounded-Skill justify-center items-center hover:scale-110 transition-all">
+    <div className="skill min-w-5 px-16 py-16  cursor-pointer  css-selector flex flex-col card gap-Skill-gap  rounded-Skill justify-center items-center hover:scale-110 transition-all  sm:h-max  sm:size-5 md:flex-row md:flex-nowrap">
       <Picture src={logo}></Picture>
       <div className="text-Skill-text text-regular">{children}</div>
     </div>

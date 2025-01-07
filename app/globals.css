@@ -141,6 +141,7 @@ img > div {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100vh;
   min-height: 100%;
 }
@@ -216,4 +217,10 @@ li > a:hover {
 ::-webkit-scrollbar-thumb:active {
   background: rgb(200, 200, 200);
   cursor: none;
+}
+
+@media (max-width: 790px) {
+  :root {
+    /* font-size: 11px; */
+  }
 }

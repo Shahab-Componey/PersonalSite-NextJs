@@ -10,7 +10,7 @@ export default function AboutMe() {
   return (
     <section
       id="AboutMe"
-      className="flex gap-AboutMe justify-center items-center flex-1"
+      className="px-5 flex gap-AboutMe justify-center items-center flex-1 sm:flex-col sm:text-center"
     >
       <motion.div
         initial={{opacity: 0, y: 50}}

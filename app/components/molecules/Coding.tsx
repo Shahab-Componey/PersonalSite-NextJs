@@ -6,14 +6,14 @@ import pic from "@/public/assets/images/landing/Landing-Image.svg";
 export default function Coding() {
   return (
     <div className="flex justify-center items-center w-[500px] relative">
-      <div className="absolute w-profile h-profile z-10 opacity-30 hover:opacity-100 transition-all ">
+      <div className="absolute w-profile h-profile z-10 opacity-30 hover:opacity-100 transition-all sm:static sm:size-96">
         <Picture
           className=" shrink-0 active:scale-105 transition-all"
           src={pic}
         ></Picture>
       </div>
 
-      <div className="opacity-85 text-2xl">
+      <div className="opacity-85 text-2xl sm:hidden">
         <ReactTyped
           className="text-white "
           strings={[

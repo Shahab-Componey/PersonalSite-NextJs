@@ -15,10 +15,12 @@ export default function Header() {
       transition={{
         duration: 1,
       }}
-      className="flex  justify-between items-center px-container h-header fixed inset-0 z-50  "
+      className="justify-between items-center px-container h-header text-center flex-1  fixed inset-0 z-50 w-full lg:my-10 py-12 "
     >
-      <Name></Name>
-      <NavBar></NavBar>
+      <div className="flex  flex-1 justify-between items-center gap-32 w-full  lg:flex-col backdrop-blur-sm lg:gap-5   ">
+        <Name></Name>
+        <NavBar></NavBar>
+      </div>
     </motion.header>
   );
 }
