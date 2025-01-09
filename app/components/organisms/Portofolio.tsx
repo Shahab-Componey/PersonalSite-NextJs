@@ -124,7 +124,7 @@ export default function Portofolio() {
       projectPicture: lspdPic,
       title: "lspd.ir",
       tolls: [nextJsPic, reactPic, taillwindPic],
-      descrption: "Los Santos Police Department Site ",
+      descrption: "LSPD Game WebSite",
       gitHubLink: "https://github.com/ShahabMorgan/LSPD.ir",
       projectLink: "lspd.ir",
     },
