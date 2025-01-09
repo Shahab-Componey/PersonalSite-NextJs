@@ -20,7 +20,7 @@ export default function Skills() {
           duration: 1,
         }}
         id="Skills"
-        className="flex Skills skill w-full  justify-center items-center gap-20 flex-wrap md:flex-nowrap md:flex-col  sm:h-max px-5 "
+        className="flex Skills skill w-full  justify-center items-center gap-20 flex-wrap md:flex-nowrap md:flex-col  sm:h-max px-5 mt-32"
       >
         <Skill color={"rgb(97, 218, 251)"} logo={ReactPic}>
           React
