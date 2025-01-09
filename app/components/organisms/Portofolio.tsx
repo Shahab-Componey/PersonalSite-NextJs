@@ -24,6 +24,7 @@ import jsPic from "@/public/assets/images/Tools/Js.svg";
 import fencing360Pic from "@/public/assets/images/Portofolio/Fencing360_Template.png";
 import shahabstorePic from "@/public/assets/images/Portofolio/ShahabStore_Template.png";
 import todoPic from "@/public/assets/images/Portofolio/Todo_Template.png";
+import lspdPic from "@/public/assets/images/Portofolio/LSPD_Template.png";
 
 interface DefualtComponent {
   src: StaticImageData;
@@ -119,6 +120,14 @@ export default function Portofolio() {
       gitHubLink: "https://github.com/ShahabMorgan/Fencing360-React",
       projectLink: "https://github.com/ShahabMorgan/Fencing360-React",
     },
+    {
+      projectPicture: lspdPic,
+      title: "lspd.ir",
+      tolls: [nextJsPic, reactPic, taillwindPic],
+      descrption: "Los Santos Police Department Site ",
+      gitHubLink: "https://github.com/ShahabMorgan/LSPD.ir",
+      projectLink: "lspd.ir",
+    },
   ];
 
   const portoflioCards = portoflio.map((v) => {
@@ -142,7 +151,9 @@ export default function Portofolio() {
       id="Portofolio"
       className="flex justify-center items-center flex-1  "
     >
-      <div className="flex gap-10 flex-wrap justify-center items-center lg:mt-80">{portoflioCards}</div>
+      <div className="flex gap-10 flex-wrap justify-center items-center lg:mt-80">
+        {portoflioCards}
+      </div>
     </motion.section>
   );
 }
