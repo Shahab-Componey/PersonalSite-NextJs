@@ -8,10 +8,10 @@ import Picture from "../attoms/Picture";
 export default function Heading() {
   return (
     <div className="flex flex-col gap-12 sm:items-center sm:text-center">
-      <Text className="text-Landing-name text-mark-text font-bold">
+      <Text className="font-bold text-Landing-name text-mark-text">
         Mahdi Shahabi Zadeh
       </Text>
-      <Text className="text-Landing-job text-regular font-bold">
+      <Text className="font-bold text-Landing-job text-regular">
         Web Developer
       </Text>
       <div className="flex gap-8">
@@ -19,7 +19,7 @@ export default function Heading() {
           <a
             target="new "
             href={
-              "https://cdn.discordapp.com/attachments/508702069138653199/1326931672448503881/Resume.png?ex=678138eb&is=677fe76b&hm=be41b8ba98080effaf328212987127114eab48b58063a49900591302c23338ea&"
+              "https://cdn.discordapp.com/attachments/508702069138653199/1327032281008832553/MahdiShahabiZadeh-Resume.pdf?ex=6781969e&is=6780451e&hm=acbb017f7eefb43fe999f6b0e5e7ad395ad5bd0935b0f14bd203f597399b4a29&"
             }
           >
             <div>CV</div>
@@ -27,7 +27,7 @@ export default function Heading() {
         </Button>
         <Button>
           <a target="new" href={"https://github.com/ShahabMorgan"}>
-            <div className=" flex justify-center items-center gap-3">
+            <div className="flex items-center justify-center gap-3 ">
               <Picture
                 className="size-Icon-size-button"
                 src={gitHubPic}
