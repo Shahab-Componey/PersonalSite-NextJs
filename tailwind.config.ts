@@ -9,7 +9,8 @@ const config: Config = {
         xl: {max: "1300px"},
         lg: {max: "971px"},
         md: {max: "767px"},
-        sm: {max: "530px"},
+        sm: {max: "665px"},
+        xs: {max: "555px"},
       },
       colors: {
         Background: "var(--background-color)",

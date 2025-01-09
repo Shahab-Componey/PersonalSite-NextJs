@@ -147,7 +147,7 @@ img > div {
 }
 
 .section {
-  height: calc(100dvh - 1px);
+  min-height: calc(100dvh + 1px);
   scroll-snap-align: start;
 }
 
@@ -219,8 +219,8 @@ li > a:hover {
   cursor: none;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 1000px) {
   :root {
-    /* font-size: 11px; */
+    font-size: 9px;
   }
 }

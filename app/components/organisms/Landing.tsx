@@ -6,11 +6,11 @@ import {motion} from "motion/react";
 export default function Landing() {
   return (
     <motion.main
-      initial={{opacity: 0, y: 110}}
+      initial={{opacity: 0, y: -210}}
       whileInView={{opacity: 1, y: 0}}
       viewport={{once: false}}
       transition={{
-        duration: 2,
+        duration: 1,
       }}
       id="Home"
       className="flex flex-1 justify-between gap-32 px-container items-center sm:flex-col-reverse  sm:justify-center  sm:gap-5 "

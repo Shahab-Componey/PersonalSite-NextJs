@@ -64,7 +64,7 @@ function HoveredComponent({
   });
 
   return (
-    <div className="flex card--hovred flex-col justify-center items-center gap-portofilio-gap h-full p-20  ">
+    <div className="flex card--hovred flex-col justify-center items-center gap-portofilio-gap h-full p-20 ">
       <div className="text-Card-title-text">{title}</div>
       <div className="text-Card-tolls-text flex gap-3">{tollses}</div>
       <div className="w-full bg-black h-row"></div>
@@ -123,7 +123,8 @@ export default function Portofolio() {
 
   const portoflioCards = portoflio.map((v) => {
     return (
-      <Card key={v.title}
+      <Card
+        key={v.title}
         defualtComponent={<DefualtComponent src={v.projectPicture} />}
         hoveredComponent={<HoveredComponent {...v} />}
       ></Card>
@@ -139,9 +140,9 @@ export default function Portofolio() {
         duration: 1,
       }}
       id="Portofolio"
-      className="flex justify-center items-center flex-1 gap-32"
+      className="flex justify-center items-center flex-1  "
     >
-      {portoflioCards}
+      <div className="flex gap-10 flex-wrap justify-center items-center lg:mt-80">{portoflioCards}</div>
     </motion.section>
   );
 }

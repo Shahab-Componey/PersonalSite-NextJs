@@ -13,7 +13,7 @@ export default function Skills() {
   return (
     <div className="flex justify-center items-center w-full flex-1">
       <motion.section
-        initial={{opacity: 0, y: -200}}
+        initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0}}
         viewport={{once: false}}
         transition={{

@@ -18,7 +18,7 @@ export default function Home() {
       <section className="flex flex-col  section">
         <Skills></Skills>
       </section>
-      <section className="flex flex-col  section">
+      <section className="flex flex-col  section sm:mt-96">
         <Portofolio></Portofolio>
         <Footter></Footter>
       </section>
