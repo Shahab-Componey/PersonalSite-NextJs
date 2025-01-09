@@ -126,7 +126,7 @@ export default function Portofolio() {
       tolls: [nextJsPic, reactPic, taillwindPic],
       descrption: "LSPD Game WebSite",
       gitHubLink: "LSPD.ir",
-      projectLink: "lspd.ir",
+      projectLink: "https://lspd.ir/",
     },
   ];
 
