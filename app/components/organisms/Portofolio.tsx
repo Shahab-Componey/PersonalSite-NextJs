@@ -43,7 +43,7 @@ function DefualtComponent({src}: DefualtComponent) {
     <div className="h-full">
       <Picture
         full={true}
-        className="h-full object-cover rounded-xl"
+        className="object-cover h-full rounded-xl"
         src={src}
       ></Picture>
     </div>
@@ -65,15 +65,15 @@ function HoveredComponent({
   });
 
   return (
-    <div className="flex card--hovred flex-col justify-center items-center gap-portofilio-gap h-full p-20 ">
+    <div className="flex flex-col items-center justify-center h-full p-20 card--hovred gap-portofilio-gap ">
       <div className="text-Card-title-text">{title}</div>
-      <div className="text-Card-tolls-text flex gap-3">{tollses}</div>
+      <div className="flex gap-3 text-Card-tolls-text">{tollses}</div>
       <div className="w-full bg-black h-row"></div>
       <div className="text-Card-tolls-descrption">{descrption}</div>
       <div className="flex gap-5">
         <Button>
           <a target="new" href={gitHubLink}>
-            <div className=" flex justify-center items-center gap-3">
+            <div className="flex items-center justify-center gap-3 ">
               <Picture
                 className="size-Icon-size-button"
                 src={gitHubPic}
@@ -84,7 +84,7 @@ function HoveredComponent({
         </Button>
         <Button>
           <a target="new" href={projectLink}>
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex items-center justify-center gap-3">
               <div>See Project</div>
             </div>
           </a>
@@ -102,7 +102,7 @@ export default function Portofolio() {
       tolls: [reactPic, nextJsPic, tsPic, swiperPic, taillwindPic, gaspPic],
       descrption: "Fenccing Club",
       gitHubLink: "https://github.com/ShahabMorgan/Fencing360-React",
-      projectLink: "https://github.com/ShahabMorgan/Fencing360-React",
+      projectLink: "https://fc360.liara.run/",
     },
     {
       projectPicture: shahabstorePic,
@@ -149,9 +149,9 @@ export default function Portofolio() {
         duration: 1,
       }}
       id="Portofolio"
-      className="flex justify-center items-center flex-1  "
+      className="flex items-center justify-center flex-1 "
     >
-      <div className="flex gap-10 flex-wrap justify-center items-center lg:mt-80">
+      <div className="flex flex-wrap items-center justify-center gap-10 lg:mt-80">
         {portoflioCards}
       </div>
     </motion.section>
