@@ -147,7 +147,7 @@ img > div {
 }
 
 .section {
-  min-height: calc(100dvh + 1px);
+  min-height: calc(100svh + 1px);
   scroll-snap-align: start;
 }
 
@@ -176,7 +176,6 @@ img > div {
 .css-selector {
   background: linear-gradient(270deg, #2b303b, #16181d, #16181c, #262b37);
   background-size: 800% 800%;
-
   animation: AnimationName 15s alternate-reverse ease infinite;
 }
 
