@@ -8,7 +8,7 @@ import phone_pic from "@/public/assets/images/Footer/Phone.svg";
 
 export default function Fotter() {
   return (
-    <footer className="flex justify-center py-footer gap-footer-gap flex-wrap mx-5 ">
+    <footer className="flex justify-center py-footer gap-footer-gap flex-wrap mx-5 my-20 ">
       <ShareContact></ShareContact>
       <div className="flex flex-col gap-y-Contact-gap">
         <Title className="lg:text-center">Contacts</Title>
