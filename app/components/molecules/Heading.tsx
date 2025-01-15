@@ -19,7 +19,7 @@ export default function Heading() {
           <a
             target="new "
             href={
-              "https://cdn.discordapp.com/attachments/508702069138653199/1327032281008832553/MahdiShahabiZadeh-Resume.pdf?ex=6781969e&is=6780451e&hm=acbb017f7eefb43fe999f6b0e5e7ad395ad5bd0935b0f14bd203f597399b4a29&"
+              "https://filebrowser-hotaka.liara.cloud/v1/projects/6772767238eb7250c2c3270c/disks/media/serve?path=./Resume.png&type=preview&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoicHJldmlldyIsInBhdGgiOiIuL1Jlc3VtZS5wbmciLCJkaXNrTmFtZSI6Im1lZGlhIiwicmVhbE5hbWUiOiI2NzcyNzY3MjM4ZWI3MjUwYzJjMzI3MGMtYTJlNTg5YTYtMDg4Yy00NzFlLWIxZjEtZTI3NGU3NGEwNzc3IiwiZmlsZU5hbWUiOiJSZXN1bWUucG5nIiwicHJvamVjdElEIjoiNjc3Mjc2NzIzOGViNzI1MGMyYzMyNzBjIiwiaWF0IjoxNzM2OTc1Mjg5LCJleHAiOjE3MzY5OTY4ODl9.416yL2hlmjClQoph__A-78Y7U7PcJbk7p3iBaoRCqy0"
             }
           >
             <div>CV</div>

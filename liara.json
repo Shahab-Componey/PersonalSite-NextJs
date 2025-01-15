@@ -1,8 +1,8 @@
 {
   "disks": [
-    {
-      "name": "media",
-      "mountTo": "uploads/media"
-    }
+      {
+          "name": "media",
+          "mountTo": "uploads/media"
+      }
   ]
 }
