@@ -16,12 +16,7 @@ export default function Heading() {
       </Text>
       <div className="flex gap-8">
         <Button>
-          <a
-            target="new "
-            href={
-              "https://filebrowser-hotaka.liara.cloud/v1/projects/6772767238eb7250c2c3270c/disks/media/serve?path=./Resume.png&type=preview&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoicHJldmlldyIsInBhdGgiOiIuL1Jlc3VtZS5wbmciLCJkaXNrTmFtZSI6Im1lZGlhIiwicmVhbE5hbWUiOiI2NzcyNzY3MjM4ZWI3MjUwYzJjMzI3MGMtYTJlNTg5YTYtMDg4Yy00NzFlLWIxZjEtZTI3NGU3NGEwNzc3IiwiZmlsZU5hbWUiOiJSZXN1bWUucG5nIiwicHJvamVjdElEIjoiNjc3Mjc2NzIzOGViNzI1MGMyYzMyNzBjIiwiaWF0IjoxNzM2OTc1Mjg5LCJleHAiOjE3MzY5OTY4ODl9.416yL2hlmjClQoph__A-78Y7U7PcJbk7p3iBaoRCqy0"
-            }
-          >
+          <a target="new " href={"https://i.ibb.co/bgZmgcy/Resume-6.png"}>
             <div>CV</div>
           </a>
         </Button>
