@@ -30,6 +30,11 @@ export default function Card({
         animate={hover ? {opacity: [0, 1]} : {opacity: [0, 1]}}
         transition={{duration: 0.5}}
         onClick={() => clickHandler()}
+        onMouseEnter={() => SetHover(true)}
+        onMouseLeave={() => {
+          if (window.matchMedia("(min-width: 1200px)").matches) return;
+          SetHover(false);
+        }}
       >
         {!hover ? defualtComponent : hoveredComponent}
       </motion.div>
