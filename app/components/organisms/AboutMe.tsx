@@ -37,7 +37,7 @@ export default function AboutMe() {
           Since then, I have been steadily improving my skills. Now I am
           developing
           <br />
-          websites and web applications to order or for myself.
+          websites and web applications to order or for myself
         </motion.div>
       </Text>
     </section>
