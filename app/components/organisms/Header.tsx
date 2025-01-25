@@ -14,7 +14,7 @@ export default function Header() {
       transition={{
         duration: 1,
       }}
-      className="justify-between items-center px-container h-header text-center flex-1  fixed inset-0 z-50 w-full lg:my-10 py-10 "
+      className="justify-between items-center px-container h-header text-center flex-1  fixed inset-0 z-50 w-full lg:my-10 py-10 sm:py-0 "
     >
       <div className="flex  flex-1 justify-between items-center gap-32 w-full  lg:flex-col  lg:gap-5">
         <Name></Name>

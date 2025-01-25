@@ -10,7 +10,7 @@ interface Contact_Interface {
 
 export default function Contact({children, src, href}: Contact_Interface) {
   return (
-    <div className="flex  shrink-0 text-Contact-title gap-Contact-gap items-start sm:text-3xl">
+    <div className="flex  shrink-0 text-Contact-title gap-Contact-gap items-start sm:text-2xl sm:items-center">
       <Picture className=" size-Icon-size" src={src}></Picture>
       <Text>
         <a target="new" href={href}>

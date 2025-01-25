@@ -11,6 +11,16 @@ export default function Card({
   hoveredComponent,
 }: Card_Interface) {
   const [hover, SetHover] = useState<Boolean>(false);
+  const timeoutRef = useRef<any>(0);
+
+  const clickHandler = () => {
+    clearTimeout(timeoutRef.current);
+    SetHover(true);
+    const timeoutId = setTimeout(() => {
+      SetHover(false);
+    }, 5000);
+    timeoutRef.current = timeoutId;
+  };
 
   return (
     <div>
@@ -19,6 +29,7 @@ export default function Card({
         className="size-portofilio bg-regular rounded-2xl "
         animate={hover ? {opacity: [0, 1]} : {opacity: [0, 1]}}
         transition={{duration: 0.5}}
+        onClick={() => clickHandler()}
         onMouseEnter={() => SetHover(true)}
         onMouseLeave={() => SetHover(false)}
       >

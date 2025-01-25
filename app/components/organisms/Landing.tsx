@@ -13,7 +13,7 @@ export default function Landing() {
         duration: 1,
       }}
       id="Home"
-      className="flex flex-1 justify-between gap-32 px-container items-center sm:flex-col-reverse  sm:justify-center  sm:gap-5 "
+      className="flex flex-1 justify-between gap-32 px-container items-center sm:flex-col-reverse  sm:justify-center  sm:gap-5  "
     >
       <Heading></Heading>
       <Coding></Coding>

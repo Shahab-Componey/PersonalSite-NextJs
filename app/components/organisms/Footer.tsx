@@ -13,8 +13,8 @@ export default function Fotter() {
       <div className="flex flex-col gap-y-Contact-gap">
         <Title className="lg:text-center">Contacts</Title>
 
-        <div className="flex space-contay gap-Contact-gap ">
-          <div className="gap-6 flex flex-col shrink-0">
+        <div className="flex space-contay gap-Contact-gap flex-wrap justify-center">
+          <div className="gap-6 flex flex-col ">
             {/* github */}
 
             <Contact src={github_pic} href="https://github.com/ShahabMorgan">
