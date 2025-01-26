@@ -71,23 +71,19 @@ function HoveredComponent({
       <div className="w-full bg-black h-row"></div>
       <div className="text-Card-tolls-descrption">{descrption}</div>
       <div className="flex gap-5">
-        <Button>
-          <a target="new" href={gitHubLink}>
-            <div className="flex items-center justify-center gap-3 ">
-              <Picture
-                className="size-Icon-size-button"
-                src={gitHubPic}
-              ></Picture>
-              <div>GitHub</div>
-            </div>
-          </a>
+        <Button href={gitHubLink}>
+          <div className="flex items-center justify-center gap-3 ">
+            <Picture
+              className="size-Icon-size-button"
+              src={gitHubPic}
+            ></Picture>
+            <div>GitHub</div>
+          </div>
         </Button>
-        <Button>
-          <a target="new" href={projectLink}>
-            <div className="flex items-center justify-center gap-3">
-              <div>See Project</div>
-            </div>
-          </a>
+        <Button href={projectLink}>
+          <div className="flex items-center justify-center gap-3">
+            <div>See Project</div>
+          </div>
         </Button>
       </div>
     </div>

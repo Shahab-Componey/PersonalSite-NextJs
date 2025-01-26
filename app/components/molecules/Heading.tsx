@@ -15,21 +15,17 @@ export default function Heading() {
         Web Developer
       </Text>
       <div className="flex gap-8">
-        <Button>
-          <a target="new " href={"https://i.ibb.co/bgZmgcy/Resume-6.png"}>
-            <div>CV</div>
-          </a>
+        <Button href={"https://i.ibb.co/bgZmgcy/Resume-6.png"}>
+          <div>CV</div>
         </Button>
-        <Button>
-          <a target="new" href={"https://github.com/ShahabMorgan"}>
-            <div className="flex items-center justify-center gap-3 ">
-              <Picture
-                className="size-Icon-size-button"
-                src={gitHubPic}
-              ></Picture>
-              <div>GitHub</div>
-            </div>
-          </a>
+        <Button href={"https://github.com/ShahabMorgan"}>
+          <div className="flex items-center justify-center gap-3 ">
+            <Picture
+              className="size-Icon-size-button"
+              src={gitHubPic}
+            ></Picture>
+            <div>GitHub</div>
+          </div>
         </Button>
       </div>
     </div>
