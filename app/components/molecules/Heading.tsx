@@ -2,7 +2,6 @@ import React from "react";
 import Text from "../attoms/Text";
 import Button from "../attoms/Button";
 import gitHubPic from "@/public/assets/images/Tools/GitHubLogo.svg";
-import resumePic from "@/public/assets/images/Tools/ResumeIcon.svg";
 
 import Picture from "../attoms/Picture";
 export default function Heading() {
