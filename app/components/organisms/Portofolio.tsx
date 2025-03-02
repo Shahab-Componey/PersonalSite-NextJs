@@ -98,7 +98,7 @@ export default function Portofolio() {
       tolls: [reactPic, nextJsPic, tsPic, swiperPic, taillwindPic, gaspPic],
       descrption: "Fenccing Club",
       gitHubLink: "https://github.com/ShahabMorgan/Fencing360-React",
-      projectLink: "https://fc360.liara.run/",
+      projectLink: "https://fc360.ir/",
     },
     {
       projectPicture: shahabstorePic,

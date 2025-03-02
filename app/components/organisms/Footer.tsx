@@ -15,8 +15,6 @@ export default function Fotter() {
 
         <div className="flex space-contay gap-Contact-gap flex-wrap justify-center">
           <div className="gap-6 flex flex-col ">
-            {/* github */}
-
             <Contact src={github_pic} href="https://github.com/ShahabMorgan">
               SHAHAB
             </Contact>
