@@ -7,7 +7,7 @@ import TsPic from "@/public/assets/images/Tools/Ts.svg";
 import ReactPic from "@/public/assets/images/Tools/React.svg";
 import NodeJsPic from "@/public/assets/images/Tools/NodeJs.svg";
 import {motion} from "motion/react";
-import {div} from "motion/react-client";
+
 
 export default function Skills() {
   return (
