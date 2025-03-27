@@ -114,7 +114,7 @@ export default function Portofolio() {
       tolls: [reactPic, taillwindPic],
       descrption: "Todo List App",
       gitHubLink: "https://github.com/ShahabMorgan/TodoList-React",
-      projectLink: "https://shahab-todo.liara.run/",
+      projectLink: "https://todo-list-sable-alpha.vercel.app/",
     },
     {
       projectPicture: lspdPic,
@@ -122,7 +122,7 @@ export default function Portofolio() {
       tolls: [nextJsPic, reactPic, taillwindPic],
       descrption: "LSPD Game WebSite",
       gitHubLink: "LSPD.ir",
-      projectLink: "https://lspd.ir/",
+      projectLink: "https://lspd-ten.vercel.app/",
     },
   ];
 
