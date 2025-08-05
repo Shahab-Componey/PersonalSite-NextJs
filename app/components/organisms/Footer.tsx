@@ -8,7 +8,7 @@ import phone_pic from "@/public/assets/images/Footer/Phone.svg";
 
 export default function Fotter() {
   return (
-    <footer className="flex justify-center py-footer gap-footer-gap flex-wrap mx-5 my-20 ">
+    <footer className="flex justify-center py-footer gap-footer-gap flex-wrap mx-5 my-20 w-full ">
       <ShareContact></ShareContact>
       <div className="flex flex-col gap-y-Contact-gap">
         <Title className="lg:text-center">Contacts</Title>
@@ -22,13 +22,14 @@ export default function Fotter() {
             <Contact src={phone_pic} href="tel:09303331636">
               09303331636
             </Contact>
+            <Contact
+              src={email_pic}
+              href="mailto:mahdishabi9@gmail.com?subject = Feedback&body = Message"
+            >
+              mahdishabi9@gmail.com
+            </Contact>
+            
           </div>
-          <Contact
-            src={email_pic}
-            href="mailto:mahdishabi9@gmail.com?subject = Feedback&body = Message"
-          >
-            mahdishabi9@gmail.com
-          </Contact>
         </div>
       </div>
     </footer>
