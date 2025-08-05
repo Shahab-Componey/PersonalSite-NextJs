@@ -6,8 +6,8 @@ import JsPic from "@/public/assets/images/Tools/Js.svg";
 import TsPic from "@/public/assets/images/Tools/Ts.svg";
 import ReactPic from "@/public/assets/images/Tools/React.svg";
 import NodeJsPic from "@/public/assets/images/Tools/NodeJs.svg";
+import AngularPic from "@/public/assets/images/Tools/Angular.svg";
 import {motion} from "motion/react";
-
 
 export default function Skills() {
   return (
@@ -22,17 +22,17 @@ export default function Skills() {
         id="Skills"
         className="flex Skills skill w-full  justify-center items-center gap-20 flex-wrap md:flex-nowrap md:flex-col  sm:h-max px-5 mt-32"
       >
+        <Skill color={"rgb(0, 122, 204)"} logo={TsPic}>
+          TypeScript
+        </Skill>
         <Skill color={"rgb(97, 218, 251)"} logo={ReactPic}>
           React
         </Skill>
         <Skill color={"rgb(0, 0, 0)"} logo={NextJsPic}>
           NextJs
         </Skill>
-        <Skill color={"rgb(240, 219, 79)"} logo={JsPic}>
-          JavaScript
-        </Skill>
-        <Skill color={"rgb(0, 122, 204)"} logo={TsPic}>
-          TypeScript
+        <Skill color={"rgb(131, 205, 41)"} logo={AngularPic}>
+          Angular
         </Skill>
         <Skill color={"rgb(131, 205, 41)"} logo={NodeJsPic}>
           NodeJs
