@@ -108,22 +108,6 @@ export default function Portofolio() {
       gitHubLink: "https://github.com/ShahabMorgan/ShahabStore-ElectronJs",
       projectLink: "https://github.com/ShahabMorgan/ShahabStore-ElectronJs",
     },
-    {
-      projectPicture: todoPic,
-      title: "TodoList",
-      tolls: [reactPic, taillwindPic],
-      descrption: "Todo List App",
-      gitHubLink: "https://github.com/ShahabMorgan/TodoList-React",
-      projectLink: "https://todo-list-sable-alpha.vercel.app/",
-    },
-    {
-      projectPicture: lspdPic,
-      title: "lspd.ir",
-      tolls: [nextJsPic, reactPic, taillwindPic],
-      descrption: "LSPD Game WebSite",
-      gitHubLink: "LSPD.ir",
-      projectLink: "https://lspd-ten.vercel.app/",
-    },
   ];
 
   const portoflioCards = portoflio.map((v) => {
