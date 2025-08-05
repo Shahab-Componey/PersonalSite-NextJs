@@ -1,0 +1,42 @@
+name: Deploy Next.js Shahab Site to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up SSH agent
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Step 3: Add VPS to known_hosts
+      - name: Add VPS to known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H 185.231.115.253 >> ~/.ssh/known_hosts
+
+      # Step 4: Upload project files to VPS
+      - name: Copy project to VPS (except node_modules/.next)
+        run: |
+          rsync -avz --exclude='node_modules' --exclude='.next' ./ root@185.231.115.253:/var/www/shahab/shahab-site
+
+      # Step 5: Install and build on VPS + restart with pm2
+      - name: Build and restart app on VPS
+        run: |
+          ssh root@185.231.115.253 << 'EOF'
+            cd /var/www/shahab/shahab-site
+            npm install
+            npm run build
+            pm2 restart shahab-site || pm2 start npm --name "shahab-site" -- start
+          EOF
