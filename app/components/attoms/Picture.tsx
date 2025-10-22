@@ -12,7 +12,7 @@ export default function Picture({src, className, full}: image_Interface) {
   return (
     <div className={`${full ? "h-full" : ""} `}>
       <Image
-        className={`h-full  ${className} `}
+        className={`h-full bg-transparent ${className} `}
         src={src}
         alt={"image dosent loaded"}
       ></Image>

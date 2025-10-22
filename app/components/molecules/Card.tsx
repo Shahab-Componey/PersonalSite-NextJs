@@ -31,12 +31,12 @@ export default function Card({
     <div>
       <motion.div
         initial={{opacity: 1}}
-        className="size-portofilio bg-regular rounded-2xl "
+        className="size-portofilio  rounded-2xl "
         animate={hover ? {opacity: [0, 1]} : {opacity: [0, 1]}}
         transition={{duration: 0.5}}
-        onClick={() => clickHandler()}
-        onMouseEnter={() => mouseHandler(true)}
-        onMouseLeave={() => mouseHandler(false)}
+        // onClick={() => clickHandler()}
+        // onMouseEnter={() => mouseHandler(true)}
+        // onMouseLeave={() => mouseHandler(false)}
       >
         {!hover ? defualtComponent : hoveredComponent}
       </motion.div>

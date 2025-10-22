@@ -8,17 +8,14 @@ import Footter from "./components/organisms/Footer";
 export default function Home() {
   return (
     <section className="containers">
-      <section className="  flex flex-col section">
+      <section className="flex flex-col section">
         <Header></Header>
         <Landing></Landing>
       </section>
       <section className="flex flex-col  section">
-        <AboutMe></AboutMe>
-      </section>
-      <section className="flex flex-col  section">
         <Skills></Skills>
       </section>
-      <section className="flex flex-col  section sm:mt-96">
+      <section className="flex flex-col  section justify-center sm:mt-96">
         <Portofolio></Portofolio>
         <Footter></Footter>
       </section>
